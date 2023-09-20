@@ -4,10 +4,13 @@
 
 #include "CoreMinimal.h"
 #include "Animation/AnimInstance.h"
+#include "GameplayTagContainer.h"
+
 #include "SAnimInstance.generated.h"
 
 
 class USActionComponent;
+class USAttributeComponent;
 /**
  * 
  */
@@ -26,6 +29,9 @@ protected:
 
 	UPROPERTY(BlueprintReadOnly, Category = "Animation")
 	TObjectPtr<USActionComponent> ActionComp;
+
+	UPROPERTY(BlueprintReadOnly, Category = "Animation")
+	TObjectPtr<USAttributeComponent> AttributeComponent;
 
 	virtual void NativeInitializeAnimation() override;
 

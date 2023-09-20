@@ -2,7 +2,7 @@
 
 
 #include "SAnimInstance.h"
-
+#include "SAttributeComponent.h"
 #include "SActionComponent.h"
 
 void USAnimInstance::NativeInitializeAnimation()
@@ -13,6 +13,7 @@ void USAnimInstance::NativeInitializeAnimation()
 	if (OwningActor)
 	{
 		ActionComp = Cast<USActionComponent>(OwningActor->GetComponentByClass(USActionComponent::StaticClass()));
+		AttributeComponent = Cast<USAttributeComponent>(OwningActor->GetComponentByClass(USAttributeComponent::StaticClass()));
 	}
 }
 
