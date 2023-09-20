@@ -4,8 +4,9 @@
 #include "AI/SBTTask_RangedAttack.h"
 #include <AIController.h>
 #include <GameFramework/Character.h>
-#include <BehaviorTree/BehaviorTreeComponent.h>
+#include "BehaviorTree/BehaviorTreeComponent.h"
 #include "SAttributeComponent.h"
+
 
 
 
@@ -14,7 +15,7 @@
 
 USBTTask_RangedAttack::USBTTask_RangedAttack()
 {
-	HandSocketName = "FX_Weapon_R_Tip";
+	HandSocketName = "Muzzle_01";
 	MaxBulletSpread = 2.0f;
 }
 

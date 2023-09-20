@@ -8,7 +8,7 @@
 
 USAction_ProjectileAttack::USAction_ProjectileAttack()
 {
-	HandSocketName = "FX_Gun_Barrel";
+	HandSocketName = "Muzzle_01";
 	AttackAnimDelay = 0.2f;
 	AttackBlockTime = 1.0f;
 	SweepRadius = 20.0f;
