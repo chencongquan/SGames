@@ -6,7 +6,7 @@
 #include <GameFramework/Character.h>
 #include "BehaviorTree/BehaviorTreeComponent.h"
 #include "SAttributeComponent.h"
-
+#include "BehaviorTree/BlackboardComponent.h"
 
 
 
